@@ -32,7 +32,7 @@ class QrCodeController extends Controller
                 ]
             );
 
-            $qr = time().'.'.'png';
+            $qr = $qrName.'.'.'png';
             QrCode::format('png')->size(500)->merge(public_path('assets/logo/logo-listerine.jpg'), .3, true)
                         ->generate(route('qrcode.get-scan', Str::slug($qrName)), public_path('uploads/qrgenerate/'. $qr));
 
