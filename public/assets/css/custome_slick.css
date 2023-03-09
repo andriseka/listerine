@@ -1,0 +1,43 @@
+.slick-prev:before, .slick-next:before {
+    color: #ffffff;
+    font-size: 30pt;
+}
+.slick-next {
+    padding-right: 80px;
+    z-index: 9999;
+}
+.slick-prev {
+    padding-left: 35px;
+    z-index: 9999;
+}
+
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #016796;
+}
+
+.slick-dots li button:before {
+    font-size: 10px;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.img-slide img{
+    width: 200px;
+    height: 300px;
+    filter:brightness(50%)
+}
+
+.img-slide span {
+    position: absolute;
+    bottom: 8%;
+    width:200px;
+    color: rgb(255, 255, 255);
+}
+
+.slide-hover:hover {
+    
+}
