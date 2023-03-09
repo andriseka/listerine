@@ -34,7 +34,7 @@ class QrCodeController extends Controller
 
             $qr = $qrName.'.'.'png';
             QrCode::format('png')->size(500)->merge(public_path('assets/logo/logo-listerine.jpg'), .3, true)
-                        ->generate(route('qrcode.get-scan', Str::slug($qrName)), public_path('uploads/qrgenerate/'. $qr));
+                        ->generate('https://beta.listerinejagamulut.com/qrcode/'.Str::slug($qrName), public_path('uploads/qrgenerate/'. $qr));
 
             $data = [
                 'name' => $qrName,
